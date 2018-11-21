@@ -1,0 +1,6 @@
+AR uart_tx rtl C:/Users/student/Desktop/BLE_new/p1/uart1/uart_tx.vhd sub00/vhpl01 1542706915
+AR uart behave C:/Users/student/Desktop/BLE_new/p1/uart1/uart_testb.vhd sub00/vhpl05 1542706919
+EN uart NULL C:/Users/student/Desktop/BLE_new/p1/uart1/uart_testb.vhd sub00/vhpl04 1542706918
+EN uart_rx NULL C:/Users/student/Desktop/BLE_new/p1/uart1/uart_rx.vhd sub00/vhpl02 1542706916
+EN uart_tx NULL C:/Users/student/Desktop/BLE_new/p1/uart1/uart_tx.vhd sub00/vhpl00 1542706914
+AR uart_rx rtl C:/Users/student/Desktop/BLE_new/p1/uart1/uart_rx.vhd sub00/vhpl03 1542706917

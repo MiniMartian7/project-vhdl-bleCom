@@ -1,0 +1,2 @@
+xst -ise "J:/x9_2_s/p1/ps2_int/ps2_int.ise" -intstyle ise -ifn ps2interface.xst -ofn ps2interface.syr
+xst -ise "C:/Users/student/Desktop/BLE_new/p1/ps2_int/ps2_int.ise" -intstyle ise -ifn "C:/Users/student/Desktop/BLE_new/p1/ps2_int/ps2interface.xst" -ofn "C:/Users/student/Desktop/BLE_new/p1/ps2_int/ps2interface.syr"

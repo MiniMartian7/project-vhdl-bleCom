@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="Xst" num="0" delta="unknown" >HDL ADVISOR - LUT implementation is currently selected for the ROM &lt;<arg fmt="%s" index="1">Mrom_rx_parity_rom0000</arg>&gt;. If you want the register to be removed and the ROM to be implemented as read-only block RAM, please change the ROM implementation style accordingly.
+</msg>
+
+<msg type="info" file="Xst" num="0" delta="unknown" >HDL ADVISOR - LUT implementation is currently selected for the ROM &lt;<arg fmt="%s" index="1">Mrom_tx_parity_rom0000</arg>&gt;. If you want the register to be removed and the ROM to be implemented as read-only block RAM, please change the ROM implementation style accordingly.
+</msg>
+
+</messages>
+

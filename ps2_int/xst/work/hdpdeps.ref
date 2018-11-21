@@ -1,0 +1,9 @@
+V3 4
+FL C:/Users/student/Desktop/BLE_new/p1/ps2_int/ps2interface.vhd 2018/10/16.19:10:00 K.31
+EN work/ps2interface 1542707888 \
+      FL C:/Users/student/Desktop/BLE_new/p1/ps2_int/ps2interface.vhd \
+      PB ieee/std_logic_1164 1200023565 PB ieee/std_logic_arith 1200023566 \
+      PB ieee/STD_LOGIC_UNSIGNED 1200023567 LB UNISIM PH unisim/VCOMPONENTS 1200023571
+AR work/ps2interface/Behavioral 1542707889 \
+      FL C:/Users/student/Desktop/BLE_new/p1/ps2_int/ps2interface.vhd \
+      EN work/ps2interface 1542707888

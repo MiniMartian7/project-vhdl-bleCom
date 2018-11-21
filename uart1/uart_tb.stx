@@ -1,0 +1,67 @@
+Release 9.2i - xst J.36
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+CPU : 0.00 / 0.17 s | Elapsed : 0.00 / 0.00 s
+ 
+--> 
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "J:/x9_2_s/p1/uart1/uart_tx.vhd" in Library work.
+Architecture rtl of Entity uart_tx is up to date.
+Compiling vhdl file "J:/x9_2_s/p1/uart1/uart_rx.vhd" in Library work.
+Architecture rtl of Entity uart_rx is up to date.
+Compiling vhdl file "J:/x9_2_s/p1/uart1/uart_testb.vhd" in Library work.
+Entity <uart> compiled.
+ERROR:HDLParsers:3010 - "J:/x9_2_s/p1/uart1/uart_testb.vhd" Line 17. Entity uart_tb does not exist.
+ERROR:HDLParsers:3312 - "J:/x9_2_s/p1/uart1/uart_testb.vhd" Line 24. Undefined symbol 'std_logic'.
+ERROR:HDLParsers:1209 - "J:/x9_2_s/p1/uart1/uart_testb.vhd" Line 24. std_logic: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "J:/x9_2_s/p1/uart1/uart_testb.vhd" Line 26. Undefined symbol 'std_logic_vector'.
+ERROR:HDLParsers:1209 - "J:/x9_2_s/p1/uart1/uart_testb.vhd" Line 26. std_logic_vector: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "J:/x9_2_s/p1/uart1/uart_testb.vhd" Line 38. Undefined symbol 'std_logic'.
+ERROR:HDLParsers:1209 - "J:/x9_2_s/p1/uart1/uart_testb.vhd" Line 38. std_logic: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "J:/x9_2_s/p1/uart1/uart_testb.vhd" Line 41. Undefined symbol 'std_logic_vector'.
+ERROR:HDLParsers:1209 - "J:/x9_2_s/p1/uart1/uart_testb.vhd" Line 41. std_logic_vector: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "J:/x9_2_s/p1/uart1/uart_testb.vhd" Line 53. Undefined symbol 'std_logic'.
+ERROR:HDLParsers:1209 - "J:/x9_2_s/p1/uart1/uart_testb.vhd" Line 53. std_logic: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "J:/x9_2_s/p1/uart1/uart_testb.vhd" Line 55. Undefined symbol 'std_logic_vector'.
+ERROR:HDLParsers:1209 - "J:/x9_2_s/p1/uart1/uart_testb.vhd" Line 55. std_logic_vector: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "J:/x9_2_s/p1/uart1/uart_testb.vhd" Line 74. Undefined symbol 'clock_in'.
+ERROR:HDLParsers:1209 - "J:/x9_2_s/p1/uart1/uart_testb.vhd" Line 74. clock_in: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "J:/x9_2_s/p1/uart1/uart_testb.vhd" Line 76. Undefined symbol 'rising_edge'.
+ERROR:HDLParsers:1209 - "J:/x9_2_s/p1/uart1/uart_testb.vhd" Line 76. rising_edge: Undefined symbol (last report in this block)
+ERROR:HDLParsers:164 - "J:/x9_2_s/p1/uart1/uart_testb.vhd" Line 77. parse error, unexpected IF, expecting THEN
+ERROR:HDLParsers:3312 - "J:/x9_2_s/p1/uart1/uart_testb.vhd" Line 79. Undefined symbol 'r_clock1'.
+ERROR:HDLParsers:1209 - "J:/x9_2_s/p1/uart1/uart_testb.vhd" Line 79. r_clock1: Undefined symbol (last report in this block)
+ERROR:HDLParsers:164 - "J:/x9_2_s/p1/uart1/uart_testb.vhd" Line 80. parse error, unexpected ELSE, expecting END
+WARNING:HDLParsers:1406 - "J:/x9_2_s/p1/uart1/uart_testb.vhd" Line 74. No sensitivity list and no wait in the process
+ERROR:HDLParsers:3312 - "J:/x9_2_s/p1/uart1/uart_testb.vhd" Line 86. Undefined symbol 'r_clock'.
+ERROR:HDLParsers:3312 - "J:/x9_2_s/p1/uart1/uart_testb.vhd" Line 86. Undefined symbol 'r_clock1'.
+ERROR:HDLParsers:1209 - "J:/x9_2_s/p1/uart1/uart_testb.vhd" Line 86. r_clock1: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "J:/x9_2_s/p1/uart1/uart_testb.vhd" Line 96. Undefined symbol 'r_CLOCK'.
+ERROR:HDLParsers:1209 - "J:/x9_2_s/p1/uart1/uart_testb.vhd" Line 96. r_CLOCK: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "J:/x9_2_s/p1/uart1/uart_testb.vhd" Line 97. Undefined symbol 'r_TX_DV'.
+ERROR:HDLParsers:1209 - "J:/x9_2_s/p1/uart1/uart_testb.vhd" Line 97. r_TX_DV: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "J:/x9_2_s/p1/uart1/uart_testb.vhd" Line 98. Undefined symbol 'r_TX_BYTE'.
+ERROR:HDLParsers:1209 - "J:/x9_2_s/p1/uart1/uart_testb.vhd" Line 98. r_TX_BYTE: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "J:/x9_2_s/p1/uart1/uart_testb.vhd" Line 100. Undefined symbol 'w_TX_SERIAL'.
+ERROR:HDLParsers:1209 - "J:/x9_2_s/p1/uart1/uart_testb.vhd" Line 100. w_TX_SERIAL: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "J:/x9_2_s/p1/uart1/uart_testb.vhd" Line 102. Undefined symbol 'w_TX_DONE'.
+ERROR:HDLParsers:1209 - "J:/x9_2_s/p1/uart1/uart_testb.vhd" Line 102. w_TX_DONE: Undefined symbol (last report in this block)
+ERROR:HDLParsers:850 - "J:/x9_2_s/p1/uart1/uart_testb.vhd" Line 99. Formal port o_tx_active does not exist in Component 'uart_tx'.
+ERROR:HDLParsers:3312 - "J:/x9_2_s/p1/uart1/uart_testb.vhd" Line 111. Undefined symbol 'r_RX_SERIAL'.
+ERROR:HDLParsers:1209 - "J:/x9_2_s/p1/uart1/uart_testb.vhd" Line 111. r_RX_SERIAL: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "J:/x9_2_s/p1/uart1/uart_testb.vhd" Line 112. Undefined symbol 'w_RX_DV'.
+ERROR:HDLParsers:1209 - "J:/x9_2_s/p1/uart1/uart_testb.vhd" Line 112. w_RX_DV: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "J:/x9_2_s/p1/uart1/uart_testb.vhd" Line 114. Undefined symbol 'w_RX_BYTE'.
+ERROR:HDLParsers:1209 - "J:/x9_2_s/p1/uart1/uart_testb.vhd" Line 114. w_RX_BYTE: Undefined symbol (last report in this block)
+CPU : 0.09 / 0.26 s | Elapsed : 0.00 / 0.00 s
+ 
+--> 
+
+Total memory usage is 154592 kilobytes
+
+Number of errors   :   41 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

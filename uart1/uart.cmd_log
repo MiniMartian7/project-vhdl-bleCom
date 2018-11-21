@@ -1,0 +1,10 @@
+xst -ise "J:/x9_2_s/p1/uart1/uart1.ise" -intstyle ise -ifn uart.xst -ofn uart.syr
+xst -ise "J:/x9_2_s/p1/uart1/uart1.ise" -intstyle ise -ifn uart.xst -ofn uart.syr
+xst -ise "J:/x9_2_s/p1/uart1/uart1.ise" -intstyle ise -ifn uart.xst -ofn uart.syr
+xst -ise "J:/x9_2_s/p1/uart1/uart1.ise" -intstyle ise -ifn uart.xst -ofn uart.syr
+xst -ise "J:/x9_2_s/p1/uart1/uart1.ise" -intstyle ise -ifn uart.xst -ofn uart.syr
+xst -ise "J:/x9_2_s/p1/uart1/uart1.ise" -intstyle ise -ifn uart.xst -ofn uart.syr
+xst -ise "J:/x9_2_s/p1/uart1/uart1.ise" -intstyle ise -ifn uart.xst -ofn uart.syr
+xst -ise "J:/x9_2_s/p1/uart1/uart1.ise" -intstyle ise -ifn uart.xst -ofn uart.syr
+xst -ise "J:/x9_2_s/p1/uart1/uart1.ise" -intstyle ise -ifn uart.xst -ofn uart.syr
+xst -ise "C:/Users/student/Desktop/BLE_new/p1/uart1/uart1.ise" -intstyle ise -ifn "C:/Users/student/Desktop/BLE_new/p1/uart1/uart.xst" -ofn "C:/Users/student/Desktop/BLE_new/p1/uart1/uart.syr"

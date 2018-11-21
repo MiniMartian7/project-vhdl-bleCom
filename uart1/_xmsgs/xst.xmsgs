@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="753" delta="unknown" >&quot;<arg fmt="%s" index="1">C:/Users/student/Desktop/BLE_new/p1/uart1/uart_testb.vhd</arg>&quot; line <arg fmt="%d" index="2">104</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">o_tx_active</arg>&apos; of component &apos;<arg fmt="%s" index="4">uart_tx</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="unknown" >Signal &lt;<arg fmt="%s" index="1">w_TX_DONE</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="1767" delta="unknown" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">o_TX_Active</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UART_TX_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">r_TX_Done</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">UART_TX_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">UART_TX_INST/r_TX_Done</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">uart</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">UART_TX_INST/o_TX_Active</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">uart</arg>&gt;.
+</msg>
+
+</messages>
+

@@ -1,0 +1,20 @@
+V3 11
+FL C:/Users/student/Desktop/BLE_new/p1/uart1/uart_rx.vhd 2018/10/28.18:48:14 K.31
+EN work/UART_RX 1542706916 \
+      FL C:/Users/student/Desktop/BLE_new/p1/uart1/uart_rx.vhd \
+      PB ieee/std_logic_1164 1200023565 PH ieee/NUMERIC_STD 1200023568
+AR work/UART_RX/rtl 1542706917 \
+      FL C:/Users/student/Desktop/BLE_new/p1/uart1/uart_rx.vhd EN work/UART_RX 1542706916
+FL C:/Users/student/Desktop/BLE_new/p1/uart1/uart_testb.vhd 2018/11/02.19:22:56 K.31
+EN work/uart 1542706918 \
+      FL C:/Users/student/Desktop/BLE_new/p1/uart1/uart_testb.vhd \
+      PB ieee/std_logic_1164 1200023565 PH ieee/NUMERIC_STD 1200023568
+AR work/uart/behave 1542706919 \
+      FL C:/Users/student/Desktop/BLE_new/p1/uart1/uart_testb.vhd EN work/uart 1542706918 \
+      CP uart_tx CP uart_rx
+FL C:/Users/student/Desktop/BLE_new/p1/uart1/uart_tx.vhd 2018/11/02.19:01:42 K.31
+EN work/UART_TX 1542706914 \
+      FL C:/Users/student/Desktop/BLE_new/p1/uart1/uart_tx.vhd \
+      PB ieee/std_logic_1164 1200023565 PH ieee/NUMERIC_STD 1200023568
+AR work/UART_TX/RTL 1542706915 \
+      FL C:/Users/student/Desktop/BLE_new/p1/uart1/uart_tx.vhd EN work/UART_TX 1542706914

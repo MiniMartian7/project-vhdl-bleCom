@@ -1,0 +1,475 @@
+Release 10.1 - xst K.31 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/student/Desktop/BLE_new/p1/ps2_int/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/student/Desktop/BLE_new/p1/ps2_int/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Reading design: ps2interface.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) Partition Resource Summary
+     9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ps2interface.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ps2interface"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-ft256
+
+---- Source Options
+Top Module Name                    : ps2interface
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : ps2interface.lso
+Keep Hierarchy                     : NO
+Netlist Hierarchy                  : as_optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/student/Desktop/BLE_new/p1/ps2_int/ps2interface.vhd" in Library work.
+Entity <ps2interface> compiled.
+Entity <ps2interface> (Architecture <Behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <ps2interface> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <ps2interface> in library <work> (Architecture <Behavioral>).
+    Set property "rom_style = distributed" for unit <ps2interface> (previous value was "Auto").
+Entity <ps2interface> analyzed. Unit <ps2interface> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <ps2interface>.
+    Related source file is "C:/Users/student/Desktop/BLE_new/p1/ps2_int/ps2interface.vhd".
+    Found 256x1-bit ROM for signal <tx_parity$rom0000> created at line 411.
+    Found 256x1-bit ROM for signal <rx_parity$rom0000> created at line 408.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 17                                             |
+    | Transitions        | 39                                             |
+    | Inputs             | 10                                             |
+    | Outputs            | 19                                             |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit tristate buffer for signal <ps2_clk>.
+    Found 1-bit tristate buffer for signal <ps2_data>.
+    Found 8-bit register for signal <rx_data>.
+    Found 1-bit register for signal <read>.
+    Found 1-bit register for signal <err>.
+    Found 4-bit up counter for signal <bit_count>.
+    Found 4-bit up counter for signal <clk_count>.
+    Found 1-bit register for signal <clk_inter>.
+    Found 1-bit xor2 for signal <clk_inter$xor0000> created at line 363.
+    Found 4-bit up counter for signal <data_count>.
+    Found 1-bit register for signal <data_inter>.
+    Found 1-bit xor2 for signal <data_inter$xor0000> created at line 387.
+    Found 14-bit up counter for signal <delay_100us_count>.
+    Found 1-bit register for signal <delay_100us_done>.
+    Found 11-bit up counter for signal <delay_20us_count>.
+    Found 1-bit register for signal <delay_20us_done>.
+    Found 6-bit up counter for signal <delay_63clk_count>.
+    Found 1-bit register for signal <delay_63clk_done>.
+    Found 11-bit register for signal <frame>.
+    Found 1-bit register for signal <load_rx_data>.
+    Found 1-bit xor2 for signal <load_rx_data$xor0000> created at line 488.
+    Found 1-bit register for signal <load_tx_data>.
+    Found 1-bit register for signal <ps2_clk_clean>.
+    Found 1-bit register for signal <ps2_clk_h>.
+    Found 1-bit register for signal <ps2_clk_s>.
+    Found 1-bit register for signal <ps2_data_clean>.
+    Found 1-bit register for signal <ps2_data_h>.
+    Found 1-bit register for signal <ps2_data_s>.
+    Found 1-bit register for signal <rx_parity>.
+    Found 1-bit register for signal <tx_parity>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   2 ROM(s).
+	inferred   6 Counter(s).
+	inferred  36 D-type flip-flop(s).
+	inferred   2 Tristate(s).
+Unit <ps2interface> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 256x1-bit ROM                                         : 2
+# Counters                                             : 6
+ 11-bit up counter                                     : 1
+ 14-bit up counter                                     : 1
+ 4-bit up counter                                      : 3
+ 6-bit up counter                                      : 1
+# Registers                                            : 29
+ 1-bit register                                        : 28
+ 8-bit register                                        : 1
+# Tristates                                            : 2
+ 1-bit tristate buffer                                 : 2
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <state/FSM> on signal <state[1:17]> with one-hot encoding.
+-------------------------------------------------
+ State                      | Encoding
+-------------------------------------------------
+ idle                       | 00000000000000001
+ rx_clk_h                   | 00000000000100000
+ rx_clk_l                   | 00000000001000000
+ rx_down_edge               | 00000000000000010
+ rx_error_parity            | 00000000000001000
+ rx_data_ready              | 00000000000010000
+ tx_force_clk_l             | 00000000000000100
+ tx_bring_data_down         | 00000000010000000
+ tx_release_clk             | 00000000100000000
+ tx_first_wait_down_edge    | 00000001000000000
+ tx_clk_l                   | 00000010000000000
+ tx_wait_up_edge            | 00000100000000000
+ tx_clk_h                   | 00010000000000000
+ tx_wait_up_edge_before_ack | 00001000000000000
+ tx_wait_ack                | 00100000000000000
+ tx_received_ack            | 01000000000000000
+ tx_error_no_ack            | 10000000000000000
+-------------------------------------------------
+Loading device for application Rf_Device from file '3s500e.nph' in environment C:\Xilinx\10.1\ISE.
+
+Synthesizing (advanced) Unit <ps2interface>.
+INFO:Xst - HDL ADVISOR - LUT implementation is currently selected for the ROM <Mrom_rx_parity_rom0000>. If you want the register to be removed and the ROM to be implemented as read-only block RAM, please change the ROM implementation style accordingly.
+INFO:Xst - HDL ADVISOR - LUT implementation is currently selected for the ROM <Mrom_tx_parity_rom0000>. If you want the register to be removed and the ROM to be implemented as read-only block RAM, please change the ROM implementation style accordingly.
+Unit <ps2interface> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 256x1-bit ROM                                         : 2
+# Counters                                             : 6
+ 11-bit up counter                                     : 1
+ 14-bit up counter                                     : 1
+ 4-bit up counter                                      : 3
+ 6-bit up counter                                      : 1
+# Registers                                            : 53
+ Flip-Flops                                            : 53
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ps2interface> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ps2interface, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 96
+ Flip-Flops                                            : 96
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : ps2interface.ngr
+Top Level Output File Name         : ps2interface
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 24
+
+Cell Usage :
+# BELS                             : 178
+#      GND                         : 1
+#      INV                         : 11
+#      LUT1                        : 23
+#      LUT2                        : 13
+#      LUT2_D                      : 1
+#      LUT2_L                      : 2
+#      LUT3                        : 24
+#      LUT3_D                      : 3
+#      LUT3_L                      : 3
+#      LUT4                        : 37
+#      LUT4_D                      : 3
+#      LUT4_L                      : 8
+#      MUXCY                       : 23
+#      MUXF5                       : 2
+#      VCC                         : 1
+#      XORCY                       : 23
+# FlipFlops/Latches                : 96
+#      FD                          : 4
+#      FDC                         : 16
+#      FDE                         : 27
+#      FDP                         : 1
+#      FDR                         : 3
+#      FDRE                        : 44
+#      FDSE                        : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 23
+#      IBUF                        : 10
+#      IOBUF                       : 2
+#      OBUF                        : 11
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500eft256-5 
+
+ Number of Slices:                       68  out of   4656     1%  
+ Number of Slice Flip Flops:             96  out of   9312     1%  
+ Number of 4 input LUTs:                128  out of   9312     1%  
+ Number of IOs:                          24
+ Number of bonded IOBs:                  24  out of    190    12%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 96    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+rst                                | IBUF                   | 17    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 4.209ns (Maximum Frequency: 237.589MHz)
+   Minimum input arrival time before clock: 3.677ns
+   Maximum output required time after clock: 5.349ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.209ns (frequency: 237.589MHz)
+  Total number of paths / destination ports: 918 / 204
+-------------------------------------------------------------------------
+Delay:               4.209ns (Levels of Logic = 3)
+  Source:            delay_100us_count_0 (FF)
+  Destination:       delay_100us_done (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: delay_100us_count_0 to delay_100us_done
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.514   0.532  delay_100us_count_0 (delay_100us_count_0)
+     LUT4_D:I0->O          1   0.612   0.509  delay_100us_count_cmp_eq00008 (delay_100us_count_cmp_eq00008)
+     LUT4:I0->O            1   0.612   0.000  delay_100us_done_or000011 (delay_100us_done_or00001)
+     MUXF5:I1->O           1   0.278   0.357  delay_100us_done_or00001_f5 (delay_100us_done_or0000)
+     FDR:R                     0.795          delay_100us_done
+    ----------------------------------------
+    Total                      4.209ns (2.811ns logic, 1.398ns route)
+                                       (66.8% logic, 33.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 38 / 31
+-------------------------------------------------------------------------
+Offset:              3.677ns (Levels of Logic = 2)
+  Source:            rst (PAD)
+  Destination:       load_rx_data (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst to load_rx_data
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            18   1.106   0.908  rst_IBUF (rst_IBUF)
+     INV:I->O              6   0.612   0.569  rst_inv1_INV_0 (rst_inv)
+     FDE:CE                    0.483          load_rx_data
+    ----------------------------------------
+    Total                      3.677ns (2.201ns logic, 1.476ns route)
+                                       (59.9% logic, 40.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 13 / 13
+-------------------------------------------------------------------------
+Offset:              5.349ns (Levels of Logic = 2)
+  Source:            state_FSM_FFd17 (FF)
+  Destination:       busy (PAD)
+  Source Clock:      clk rising
+
+  Data Path: state_FSM_FFd17 to busy
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              9   0.514   0.697  state_FSM_FFd17 (state_FSM_FFd17)
+     INV:I->O              1   0.612   0.357  state_FSM_Out181_INV_0 (busy_OBUF)
+     OBUF:I->O                 3.169          busy_OBUF (busy)
+    ----------------------------------------
+    Total                      5.349ns (4.295ns logic, 1.054ns route)
+                                       (80.3% logic, 19.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.25 secs
+ 
+--> 
+
+Total memory usage is 208908 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+
