@@ -17,10 +17,9 @@ input [7:0] in_byte_tx;
 output out_serial_tx;
 /*output out_done_tx;*/
 
-reg /*ack_d, ack_ff,*/ en_d, en_ff;
 reg [7:0] data_d, data_ff;
 reg out_serial_d, out_serial_ff;
-reg [15:0] clk_count_d, clk_count_ff;
+reg [7:0] clk_count_d, clk_count_ff;
 reg [1:0] sm_main_d, sm_main_ff;
 
 reg [2:0] data_index_d, data_index_ff;
@@ -38,10 +37,9 @@ parameter STOP_BIT = 'b11;
 
 
 
-always @(posedge clk_tx or posedge rst_tx)
+always @(posedge clk_tx or posedge rst_tx) begin
     if(rst_tx) begin
         /*ack_ff <= DISABLE;*/
-        en_ff <= DISABLE;
         data_ff <= DISABLE;
         out_serial_ff <= DISABLE;
         sm_main_ff <= DISABLE;
@@ -51,7 +49,6 @@ always @(posedge clk_tx or posedge rst_tx)
     end
     else begin
         /*ack_ff <= ack_d;*/
-        en_ff <= en_d;
         data_ff <= data_d;
         out_serial_ff <= out_serial_d;
         sm_main_ff <= sm_main_d;
@@ -69,11 +66,10 @@ SEND_STOP_BIT = 2'b11
 */
 
 always @(*) begin
-    /*ack_d <= ack_ff;*/
-    /*out_done_d <= out_done_ff;*/
-    en_d = en_ff;
+    /*ack_d <= ack_ff;
+    out_done_d <= out_done_ff;*/
     data_d = data_ff;
-    out_serial_d = serial_out_ff;
+    out_serial_d = out_serial_ff;
     sm_main_d = sm_main_ff;
     clk_count_d = clk_count_ff;
     data_index_d = data_index_ff;
@@ -84,11 +80,11 @@ always @(*) begin
             out_serial_d = 'b1;/*so says the protocol*/
             clk_count_d = 0;
 
-            if(en_ff == 1 && data_index_ff == 8) begin/*verifica la valoare buna pt ultimul bit*/
+            if(enable_tx == 1 && data_index_ff == 8) begin/*verifica la valoare buna pt ultimul bit*/
                 sm_main_d = START_BIT;
                 data_d = in_byte_tx;
             end
-            else if(en_ff == 0) begin
+            else if(enable_tx == 0) begin
                 sm_main_d = IDLE;
                 data_index_d = 0;
             end
@@ -141,4 +137,6 @@ always @(*) begin
     endcase
     
 end
+
+assign out_serial_tx = out_serial_ff;
 endmodule
