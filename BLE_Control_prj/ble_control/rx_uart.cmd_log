@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/ble_control/rx_uart.xst" -ofn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/ble_control/rx_uart.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/wiring_rx.ucf -p xc3s500e-fg320-5 rx_uart.ngc rx_uart.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o rx_uart_map.ncd rx_uart.ngd rx_uart.pcf 
+par -w -intstyle ise -ol high -t 1 rx_uart_map.ncd rx_uart.ncd rx_uart.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml rx_uart.twx rx_uart.ncd -o rx_uart.twr rx_uart.pcf 
+bitgen -intstyle ise -f rx_uart.ut rx_uart.ncd 
+xst -intstyle ise -ifn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/ble_control/rx_uart.xst" -ofn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/ble_control/rx_uart.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/wiring_rx.ucf -p xc3s500e-fg320-5 rx_uart.ngc rx_uart.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o rx_uart_map.ncd rx_uart.ngd rx_uart.pcf 
+par -w -intstyle ise -ol high -t 1 rx_uart_map.ncd rx_uart.ncd rx_uart.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml rx_uart.twx rx_uart.ncd -o rx_uart.twr rx_uart.pcf 
+bitgen -intstyle ise -f rx_uart.ut rx_uart.ncd 

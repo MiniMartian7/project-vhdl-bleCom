@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Mackintosh\Documents\GitHub\project-vhdl-bleCom\BLE_Control_prj\ble_control\rx_uart.ncd
+OUTFILE=C:\Users\Mackintosh\Documents\GitHub\project-vhdl-bleCom\BLE_Control_prj\ble_control\rx_uart.bit
+FAMILY=Spartan3E
+PART=xc3s500e-5fg320
+WORKINGDIR=C:\Users\Mackintosh\Documents\GitHub\project-vhdl-bleCom\BLE_Control_prj\ble_control
+LICENSE=WebPack
+USER_INFO=211487584_0_0_417

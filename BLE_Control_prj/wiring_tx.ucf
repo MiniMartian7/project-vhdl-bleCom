@@ -1,0 +1,12 @@
+NET "clk_tx" LOC = B8;
+NET "rst_tx" LOC = H13;
+
+NET "byte_tx<0>" = G18;
+NET "byte_tx<1>" = H18;
+NET "byte_tx<2>" = K18;
+NET "byte_tx<3>" = K17;
+NET "byte_tx<4>" = L14;
+NET "byte_tx<5>" = L13;
+NET "byte_tx<6>" = N17;
+NET "byte_tx<7>" = R17;
+

@@ -1,0 +1,52 @@
+xst -intstyle ise -ifn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.xst" -ofn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.syr" 
+xst -intstyle ise -ifn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.xst" -ofn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.syr" 
+xst -intstyle ise -ifn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.xst" -ofn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.syr" 
+xst -intstyle ise -ifn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.xst" -ofn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.syr" 
+xst -intstyle ise -ifn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.xst" -ofn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.syr" 
+xst -intstyle ise -ifn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.xst" -ofn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.syr" 
+xst -intstyle ise -ifn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.xst" -ofn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.syr" 
+xst -intstyle ise -ifn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.xst" -ofn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.syr" 
+xst -intstyle ise -ifn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.xst" -ofn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.syr" 
+xst -intstyle ise -ifn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.xst" -ofn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.syr" 
+xst -intstyle ise -ifn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.xst" -ofn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.syr" 
+xst -intstyle ise -ifn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.xst" -ofn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.syr" 
+xst -intstyle ise -ifn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.xst" -ofn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.syr" 
+xst -intstyle ise -ifn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.xst" -ofn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.syr" 
+xst -intstyle ise -ifn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.xst" -ofn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc port_3v3_wiring.ucf -p xc3s500e-fg320-5 test_3v3.ngc test_3v3.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o test_3v3_map.ncd test_3v3.ngd test_3v3.pcf 
+par -w -intstyle ise -ol high -t 1 test_3v3_map.ncd test_3v3.ncd test_3v3.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml test_3v3.twx test_3v3.ncd -o test_3v3.twr test_3v3.pcf -ucf port_3v3_wiring.ucf 
+bitgen -intstyle ise -f test_3v3.ut test_3v3.ncd 
+xst -intstyle ise -ifn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.xst" -ofn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc port_3v3_wiring.ucf -p xc3s500e-fg320-5 test_3v3.ngc test_3v3.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o test_3v3_map.ncd test_3v3.ngd test_3v3.pcf 
+par -w -intstyle ise -ol high -t 1 test_3v3_map.ncd test_3v3.ncd test_3v3.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml test_3v3.twx test_3v3.ncd -o test_3v3.twr test_3v3.pcf -ucf port_3v3_wiring.ucf 
+bitgen -intstyle ise -f test_3v3.ut test_3v3.ncd 
+xst -intstyle ise -ifn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.xst" -ofn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.syr" 
+xst -intstyle ise -ifn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.xst" -ofn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc port_3v3_wiring.ucf -p xc3s500e-fg320-5 test_3v3.ngc test_3v3.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o test_3v3_map.ncd test_3v3.ngd test_3v3.pcf 
+par -w -intstyle ise -ol high -t 1 test_3v3_map.ncd test_3v3.ncd test_3v3.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml test_3v3.twx test_3v3.ncd -o test_3v3.twr test_3v3.pcf -ucf port_3v3_wiring.ucf 
+bitgen -intstyle ise -f test_3v3.ut test_3v3.ncd 
+xst -intstyle ise -ifn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.xst" -ofn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.syr" 
+xst -intstyle ise -ifn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.xst" -ofn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc port_3v3_wiring.ucf -p xc3s500e-fg320-5 test_3v3.ngc test_3v3.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o test_3v3_map.ncd test_3v3.ngd test_3v3.pcf 
+par -w -intstyle ise -ol high -t 1 test_3v3_map.ncd test_3v3.ncd test_3v3.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml test_3v3.twx test_3v3.ncd -o test_3v3.twr test_3v3.pcf -ucf port_3v3_wiring.ucf 
+bitgen -intstyle ise -f test_3v3.ut test_3v3.ncd 
+xst -intstyle ise -ifn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.xst" -ofn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc port_3v3_wiring.ucf -p xc3s500e-fg320-5 test_3v3.ngc test_3v3.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o test_3v3_map.ncd test_3v3.ngd test_3v3.pcf 
+par -w -intstyle ise -ol high -t 1 test_3v3_map.ncd test_3v3.ncd test_3v3.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml test_3v3.twx test_3v3.ncd -o test_3v3.twr test_3v3.pcf -ucf port_3v3_wiring.ucf 
+bitgen -intstyle ise -f test_3v3.ut test_3v3.ncd 
+xst -intstyle ise -ifn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.xst" -ofn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/test_3v3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc port_3v3_wiring.ucf -p xc3s500e-fg320-5 test_3v3.ngc test_3v3.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o test_3v3_map.ncd test_3v3.ngd test_3v3.pcf 
+par -w -intstyle ise -ol high -t 1 test_3v3_map.ncd test_3v3.ncd test_3v3.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml test_3v3.twx test_3v3.ncd -o test_3v3.twr test_3v3.pcf -ucf port_3v3_wiring.ucf 
+bitgen -intstyle ise -f test_3v3.ut test_3v3.ncd 

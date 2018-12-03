@@ -1,0 +1,41 @@
+Release 14.7 ngdbuild P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
+ise -dd _ngo -nt timestamp -uc
+C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/wiring_
+rx.ucf -p xc3s500e-fg320-5 rx_uart.ngc rx_uart.ngd
+
+Reading NGO file
+"C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/ble_co
+ntrol/rx_uart.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file
+"C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/wiring
+_rx.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 151536 kilobytes
+
+Writing NGD file "rx_uart.ngd" ...
+Total REAL time to NGDBUILD completion:  5 sec
+Total CPU time to NGDBUILD completion:   3 sec
+
+Writing NGDBUILD log file "rx_uart.bld"...

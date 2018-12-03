@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/port_3v3_test/xst"
+elaborate
+-ifn .prj
+-ifmt mixed

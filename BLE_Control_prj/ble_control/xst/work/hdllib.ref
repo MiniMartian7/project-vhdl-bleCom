@@ -1,1 +1,1 @@
-MO tx_uart NULL ../../parts_code/tx_uart.v vlg23/tx__uart.bin 1543268354
+MO rx_uart NULL ../rx_uart.v vlg11/rx__uart.bin 1543845726

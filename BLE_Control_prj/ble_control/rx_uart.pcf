@@ -1,0 +1,19 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Dec 03 16:02:32 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "data_rx<7>" LOCATE = SITE "R4" LEVEL 1;
+COMP "in_serial_rx" LOCATE = SITE "M13" LEVEL 1;
+COMP "clk" LOCATE = SITE "B8" LEVEL 1;
+COMP "rst_rx" LOCATE = SITE "B18" LEVEL 1;
+COMP "data_rx<0>" LOCATE = SITE "J14" LEVEL 1;
+COMP "data_rx<1>" LOCATE = SITE "J15" LEVEL 1;
+COMP "data_rx<2>" LOCATE = SITE "K15" LEVEL 1;
+COMP "data_rx<3>" LOCATE = SITE "K14" LEVEL 1;
+COMP "data_rx<4>" LOCATE = SITE "E17" LEVEL 1;
+COMP "data_rx<5>" LOCATE = SITE "P15" LEVEL 1;
+COMP "data_rx<6>" LOCATE = SITE "F4" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+
