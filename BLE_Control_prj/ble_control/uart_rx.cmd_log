@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/ble_control/uart_rx.xst" -ofn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/ble_control/uart_rx.syr" 

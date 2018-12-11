@@ -1,0 +1,3 @@
+verilog work "../../rx_byte_selector_v2.v"
+verilog work "../../rx_byte_interpreter_v2.v"
+verilog work "../../rx_top_v2.v"

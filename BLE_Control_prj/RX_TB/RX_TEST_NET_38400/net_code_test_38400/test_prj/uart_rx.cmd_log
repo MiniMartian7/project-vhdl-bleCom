@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/RX_TB/RX_TEST_NET_38400/net_code_test_38400/test_prj/uart_rx.xst" -ofn "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/RX_TB/RX_TEST_NET_38400/net_code_test_38400/test_prj/uart_rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/RX_TB/RX_TEST_NET_38400/net_wiring.ucf -p xc3s500e-fg320-5 uart_rx.ngc uart_rx.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o uart_rx_map.ncd uart_rx.ngd uart_rx.pcf 
+par -w -intstyle ise -ol high -t 1 uart_rx_map.ncd uart_rx.ncd uart_rx.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml uart_rx.twx uart_rx.ncd -o uart_rx.twr uart_rx.pcf 
+bitgen -intstyle ise -f uart_rx.ut uart_rx.ncd 
+bitgen -intstyle ise -f uart_rx.ut uart_rx.ncd 

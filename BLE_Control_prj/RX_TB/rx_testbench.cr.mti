@@ -1,0 +1,8 @@
+C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/RX_TB/tb_rx.v {1 {vlog -work work -stats=none C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/RX_TB/tb_rx.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module tb_rx
+
+Top level modules:
+	tb_rx
+
+} {} {}}

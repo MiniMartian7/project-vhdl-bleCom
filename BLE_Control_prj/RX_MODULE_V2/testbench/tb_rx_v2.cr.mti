@@ -1,0 +1,22 @@
+C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/RX_MODULE_V2/rx_byte_interpreter_v2.v {1 {vlog -work work -stats=none C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/RX_MODULE_V2/rx_byte_interpreter_v2.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module rx_uart_byte_interpreter
+
+Top level modules:
+	rx_uart_byte_interpreter
+
+} {} {}} C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/RX_MODULE_V2/rx_top_v2.v {1 {vlog -work work -stats=none C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/RX_MODULE_V2/rx_top_v2.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module rx_uart_top
+
+Top level modules:
+	rx_uart_top
+
+} {} {}} C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/RX_MODULE_V2/rx_tb_v2.sv {1 {vlog -work work -sv -stats=none C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/RX_MODULE_V2/rx_tb_v2.sv
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module tb_rx
+
+Top level modules:
+	tb_rx
+
+} {} {}}

@@ -4,102 +4,104 @@
      changes made to this file may result in unpredictable
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
-<DeviceUsageSummary rev="12">
-<DesignStatistics TimeStamp="Mon Dec 03 12:31:41 2018"><group name="NetStatistics">
-<item name="NumNets_Active" rev="12">
+<DeviceUsageSummary rev="14">
+<DesignStatistics TimeStamp="Tue Dec 11 12:38:29 2018"><group name="NetStatistics">
+<item name="NumNets_Active" rev="14">
 <attrib name="value" value="3"/></item>
-<item name="NumNodesOfType_Active_DOUBLE" rev="12">
-<attrib name="value" value="2"/></item>
-<item name="NumNodesOfType_Active_DUMMYESC" rev="12">
+<item name="NumNodesOfType_Active_DOUBLE" rev="14">
+<attrib name="value" value="3"/></item>
+<item name="NumNodesOfType_Active_DUMMYESC" rev="14">
 <attrib name="value" value="1"/></item>
-<item name="NumNodesOfType_Active_INPUT" rev="12">
+<item name="NumNodesOfType_Active_HUNIHEX" rev="14">
+<attrib name="value" value="3"/></item>
+<item name="NumNodesOfType_Active_INPUT" rev="14">
 <attrib name="value" value="1"/></item>
-<item name="NumNodesOfType_Active_IOBOUTPUT" rev="12">
-<attrib name="value" value="1"/></item>
-<item name="NumNodesOfType_Active_VUNIHEX" rev="12">
+<item name="NumNodesOfType_Active_IOBOUTPUT" rev="14">
 <attrib name="value" value="1"/></item>
 </group>
 <group name="MiscellaneousStatistics">
-<item name="AGG_BONDED_IO" rev="11">
+<item name="AGG_BONDED_IO" rev="13">
 <attrib name="value" value="2"/></item>
-<item name="AGG_IO" rev="11">
+<item name="AGG_IO" rev="13">
 <attrib name="value" value="2"/></item>
-<item name="NUM_BONDED_IBUF" rev="11">
+<item name="NUM_BONDED_IBUF" rev="13">
 <attrib name="value" value="1"/></item>
-<item name="NUM_BONDED_IOB" rev="11">
+<item name="NUM_BONDED_IOB" rev="13">
 <attrib name="value" value="1"/></item>
 </group>
 <group name="SiteStatistics">
-<item name="IOB-DIFFS" rev="12">
+<item name="IBUF-DIFFM" rev="14">
+<attrib name="value" value="1"/></item>
+<item name="IOB-DIFFS" rev="14">
 <attrib name="value" value="1"/></item>
 </group>
 </DesignStatistics>
-<DeviceUsage TimeStamp="Mon Dec 03 12:31:41 2018"><group name="SiteSummary">
-<item name="IBUF" rev="12">
+<DeviceUsage TimeStamp="Tue Dec 11 12:38:29 2018"><group name="SiteSummary">
+<item name="IBUF" rev="14">
 <attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
-<item name="IBUF_INBUF" rev="12">
+<item name="IBUF_INBUF" rev="14">
 <attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
-<item name="IBUF_PAD" rev="12">
+<item name="IBUF_PAD" rev="14">
 <attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
-<item name="IOB" rev="12">
+<item name="IOB" rev="14">
 <attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
-<item name="IOB_OUTBUF" rev="12">
+<item name="IOB_OUTBUF" rev="14">
 <attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
-<item name="IOB_PAD" rev="12">
+<item name="IOB_PAD" rev="14">
 <attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
 </group>
 </DeviceUsage>
-<ReportConfigData TimeStamp="Mon Dec 03 12:31:41 2018"><group name="IBUF_PAD">
-<item name="IOATTRBOX" rev="12">
+<ReportConfigData TimeStamp="Tue Dec 11 12:38:29 2018"><group name="IBUF_PAD">
+<item name="IOATTRBOX" rev="14">
 <attrib name="LVCMOS25" value="1"/></item>
 </group>
 <group name="IOB_OUTBUF">
-<item name="IN" rev="12">
+<item name="IN" rev="14">
 <attrib name="IN_INV" value="0"/><attrib name="IN" value="1"/></item>
 </group>
 <group name="IOB_PAD">
-<item name="DRIVEATTRBOX" rev="12">
+<item name="DRIVEATTRBOX" rev="14">
 <attrib name="12" value="1"/></item>
-<item name="IOATTRBOX" rev="12">
+<item name="IOATTRBOX" rev="14">
 <attrib name="LVCMOS25" value="1"/></item>
-<item name="SLEW" rev="12">
+<item name="SLEW" rev="14">
 <attrib name="SLOW" value="1"/></item>
 </group>
 <group name="IOB">
-<item name="O1" rev="12">
+<item name="O1" rev="14">
 <attrib name="O1_INV" value="0"/><attrib name="O1" value="1"/></item>
 </group>
 </ReportConfigData>
-<ReportPinData TimeStamp="Mon Dec 03 12:31:41 2018"><group name="IBUF_PAD">
-<item name="PAD" rev="12">
+<ReportPinData TimeStamp="Tue Dec 11 12:38:29 2018"><group name="IBUF_PAD">
+<item name="PAD" rev="14">
 <attrib name="value" value="1"/></item>
 </group>
 <group name="IBUF_INBUF">
-<item name="IN" rev="12">
+<item name="IN" rev="14">
 <attrib name="value" value="1"/></item>
-<item name="OUT" rev="12">
+<item name="OUT" rev="14">
 <attrib name="value" value="1"/></item>
 </group>
 <group name="IOB_OUTBUF">
-<item name="IN" rev="12">
+<item name="IN" rev="14">
 <attrib name="value" value="1"/></item>
-<item name="OUT" rev="12">
+<item name="OUT" rev="14">
 <attrib name="value" value="1"/></item>
 </group>
 <group name="IBUF">
-<item name="I" rev="12">
+<item name="I" rev="14">
 <attrib name="value" value="1"/></item>
-<item name="PAD" rev="12">
+<item name="PAD" rev="14">
 <attrib name="value" value="1"/></item>
 </group>
 <group name="IOB_PAD">
-<item name="PAD" rev="12">
+<item name="PAD" rev="14">
 <attrib name="value" value="1"/></item>
 </group>
 <group name="IOB">
-<item name="O1" rev="12">
+<item name="O1" rev="14">
 <attrib name="value" value="1"/></item>
-<item name="PAD" rev="12">
+<item name="PAD" rev="14">
 <attrib name="value" value="1"/></item>
 </group>
 </ReportPinData>

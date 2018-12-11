@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/RX_MODULE_V2/project/rx_module_v2/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Mackintosh/Documents/GitHub/project-vhdl-bleCom/BLE_Control_prj/RX_MODULE_V2/project/rx_module_v2/xst"
+elaborate
+-ifn rx_uart_byte_interpreter.prj
+-ifmt mixed

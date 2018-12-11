@@ -1,0 +1,3 @@
+MO rx_uart_byte_interpreter NULL ../../rx_byte_interpreter_v2.v vlg1B/rx__uart__byte__interpreter.bin 1544548312
+MO rx_uart_top NULL ../../rx_top_v2.v vlg53/rx__uart__top.bin 1544548312
+MO rx_uart_byte_selector NULL ../../rx_byte_selector_v2.v vlg64/rx__uart__byte__selector.bin 1544548312

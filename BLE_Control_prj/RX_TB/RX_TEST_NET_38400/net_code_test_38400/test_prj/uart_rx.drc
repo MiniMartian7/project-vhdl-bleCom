@@ -1,0 +1,13 @@
+Release 14.7 Drc P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Wed Dec 05 11:33:58 2018
+
+drc -z uart_rx.ncd uart_rx.pcf
+
+WARNING:PhysDesignRules:367 - The signal <i_Clock_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <i_Rx_Serial_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+DRC detected 0 errors and 2 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

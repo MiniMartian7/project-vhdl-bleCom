@@ -1,0 +1,442 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: rx_uart_byte_selector.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "rx_uart_byte_selector.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "rx_uart_byte_selector"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : rx_uart_byte_selector
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "../../rx_byte_selector_v2.v" in library work
+Module <rx_uart_byte_selector> compiled
+No errors in compilation
+Analysis of file <"rx_uart_byte_selector.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <rx_uart_byte_selector> in library <work> with parameters.
+	CLK_PER_BIT = "00000000000000000000010100010110"
+	DATA_BIT = "10"
+	DISABLE = "00000000000000000000000000000000"
+	ENABLE = "00000000000000000000000000000001"
+	IDLE = "00"
+	START_BIT = "01"
+	STOP_BIT = "11"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <rx_uart_byte_selector>.
+	CLK_PER_BIT = 32'sb00000000000000000000010100010110
+	DATA_BIT = 2'b10
+	DISABLE = 32'sb00000000000000000000000000000000
+	ENABLE = 32'sb00000000000000000000000000000001
+	IDLE = 2'b00
+	START_BIT = 2'b01
+	STOP_BIT = 2'b11
+Module <rx_uart_byte_selector> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <rx_uart_byte_selector>.
+    Related source file is "../../rx_byte_selector_v2.v".
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <bit_case_ff> of Case statement line 47 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <bit_case_ff> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Found finite state machine <FSM_0> for signal <bit_case_ff>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk_b_selector            (rising_edge)        |
+    | Reset              | rst_b_selector            (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 33-bit comparator less for signal <bit_case_ff$cmp_lt0000> created at line 61.
+    Found 33-bit comparator less for signal <bit_case_ff$cmp_lt0001> created at line 73.
+    Found 32-bit adder for signal <bit_cnt_d$share0000> created at line 47.
+    Found 32-bit register for signal <bit_cnt_ff>.
+    Found 32-bit adder for signal <bit_index_d$addsub0000> created at line 85.
+    Found 32-bit register for signal <bit_index_ff>.
+    Found 8-bit register for signal <data_ff>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  72 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <rx_uart_byte_selector> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 2
+# Registers                                            : 3
+ 32-bit register                                       : 2
+ 8-bit register                                        : 1
+# Comparators                                          : 2
+ 33-bit comparator less                                : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <bit_case_ff/FSM> on signal <bit_case_ff[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 11
+ 11    | 10
+-------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 2
+# Registers                                            : 72
+ Flip-Flops                                            : 72
+# Comparators                                          : 2
+ 33-bit comparator less                                : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <rx_uart_byte_selector> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block rx_uart_byte_selector, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 74
+ Flip-Flops                                            : 74
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : rx_uart_byte_selector.ngr
+Top Level Output File Name         : rx_uart_byte_selector
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 11
+
+Cell Usage :
+# BELS                             : 363
+#      GND                         : 1
+#      INV                         : 10
+#      LUT1                        : 71
+#      LUT2                        : 5
+#      LUT2_D                      : 1
+#      LUT3                        : 11
+#      LUT4                        : 91
+#      LUT4_D                      : 7
+#      MUXCY                       : 100
+#      MUXF5                       : 1
+#      VCC                         : 1
+#      XORCY                       : 64
+# FlipFlops/Latches                : 74
+#      FDC                         : 74
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 10
+#      IBUF                        : 2
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                      103  out of   4656     2%  
+ Number of Slice Flip Flops:             74  out of   9312     0%  
+ Number of 4 input LUTs:                196  out of   9312     2%  
+ Number of IOs:                          11
+ Number of bonded IOBs:                  11  out of    232     4%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk_b_selector                     | BUFGP                  | 74    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+rst_b_selector                     | IBUF                   | 74    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 7.121ns (Maximum Frequency: 140.434MHz)
+   Minimum input arrival time before clock: 5.333ns
+   Maximum output required time after clock: 4.063ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_b_selector'
+  Clock period: 7.121ns (frequency: 140.434MHz)
+  Total number of paths / destination ports: 8567 / 74
+-------------------------------------------------------------------------
+Delay:               7.121ns (Levels of Logic = 18)
+  Source:            bit_cnt_ff_1 (FF)
+  Destination:       bit_index_ff_0 (FF)
+  Source Clock:      clk_b_selector rising
+  Destination Clock: clk_b_selector rising
+
+  Data Path: bit_cnt_ff_1 to bit_index_ff_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.514   0.651  bit_cnt_ff_1 (bit_cnt_ff_1)
+     LUT1:I0->O            1   0.612   0.000  Mcompar_bit_case_ff_cmp_lt0001_cy<0>_0_rt (Mcompar_bit_case_ff_cmp_lt0001_cy<0>_0_rt)
+     MUXCY:S->O            1   0.404   0.000  Mcompar_bit_case_ff_cmp_lt0001_cy<0>_0 (Mcompar_bit_case_ff_cmp_lt0001_cy<0>1)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_bit_case_ff_cmp_lt0001_cy<1>_0 (Mcompar_bit_case_ff_cmp_lt0001_cy<1>1)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_bit_case_ff_cmp_lt0001_cy<2>_0 (Mcompar_bit_case_ff_cmp_lt0001_cy<2>1)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_bit_case_ff_cmp_lt0001_cy<3>_0 (Mcompar_bit_case_ff_cmp_lt0001_cy<3>1)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_bit_case_ff_cmp_lt0001_cy<4>_0 (Mcompar_bit_case_ff_cmp_lt0001_cy<4>1)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_bit_case_ff_cmp_lt0001_cy<5>_0 (Mcompar_bit_case_ff_cmp_lt0001_cy<5>1)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_bit_case_ff_cmp_lt0001_cy<6>_0 (Mcompar_bit_case_ff_cmp_lt0001_cy<6>1)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_bit_case_ff_cmp_lt0001_cy<7>_0 (Mcompar_bit_case_ff_cmp_lt0001_cy<7>1)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_bit_case_ff_cmp_lt0001_cy<8>_0 (Mcompar_bit_case_ff_cmp_lt0001_cy<8>1)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_bit_case_ff_cmp_lt0001_cy<9>_0 (Mcompar_bit_case_ff_cmp_lt0001_cy<9>1)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_bit_case_ff_cmp_lt0001_cy<10>_0 (Mcompar_bit_case_ff_cmp_lt0001_cy<10>1)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_bit_case_ff_cmp_lt0001_cy<11>_0 (Mcompar_bit_case_ff_cmp_lt0001_cy<11>1)
+     MUXCY:CI->O           1   0.051   0.000  Mcompar_bit_case_ff_cmp_lt0001_cy<12>_0 (Mcompar_bit_case_ff_cmp_lt0001_cy<12>1)
+     MUXCY:CI->O           2   0.399   0.449  Mcompar_bit_case_ff_cmp_lt0001_cy<13>_0 (Mcompar_bit_case_ff_cmp_lt0001_cy<13>1)
+     LUT2:I1->O            4   0.612   0.502  bit_index_d<0>1_SW0 (N39)
+     LUT4_D:I3->O         15   0.612   0.867  bit_cnt_d<0>2 (N5)
+     LUT4:I3->O            1   0.612   0.000  bit_cnt_d<22>1 (bit_cnt_d<22>)
+     FDC:D                     0.268          bit_cnt_ff_22
+    ----------------------------------------
+    Total                      7.121ns (4.652ns logic, 2.469ns route)
+                                       (65.3% logic, 34.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_b_selector'
+  Total number of paths / destination ports: 115 / 74
+-------------------------------------------------------------------------
+Offset:              5.333ns (Levels of Logic = 4)
+  Source:            in_bit_serial (PAD)
+  Destination:       bit_index_ff_0 (FF)
+  Destination Clock: clk_b_selector rising
+
+  Data Path: in_bit_serial to bit_index_ff_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   1.106   0.754  in_bit_serial_IBUF (in_bit_serial_IBUF)
+     LUT2:I0->O            4   0.612   0.502  bit_index_d<0>1_SW0 (N39)
+     LUT4_D:I3->O         15   0.612   0.867  bit_cnt_d<0>2 (N5)
+     LUT4:I3->O            1   0.612   0.000  bit_cnt_d<22>1 (bit_cnt_d<22>)
+     FDC:D                     0.268          bit_cnt_ff_22
+    ----------------------------------------
+    Total                      5.333ns (3.210ns logic, 2.123ns route)
+                                       (60.2% logic, 39.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_b_selector'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.063ns (Levels of Logic = 1)
+  Source:            data_ff_7 (FF)
+  Destination:       out_byte<7> (PAD)
+  Source Clock:      clk_b_selector rising
+
+  Data Path: data_ff_7 to out_byte<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.514   0.380  data_ff_7 (data_ff_7)
+     OBUF:I->O                 3.169          out_byte_7_OBUF (out_byte<7>)
+    ----------------------------------------
+    Total                      4.063ns (3.683ns logic, 0.380ns route)
+                                       (90.6% logic, 9.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.56 secs
+ 
+--> 
+
+Total memory usage is 253444 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

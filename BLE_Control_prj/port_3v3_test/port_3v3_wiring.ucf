@@ -1,2 +1,2 @@
-NET "set" LOC = G18;
-NET "out_port" LOC = K14;
+NET "set" LOC = F12;
+NET "out_port" LOC = B4;
